@@ -102,6 +102,7 @@ if __name__ == '__main__':
                                                         after_scheduler=base_scheduler)
     criterion = nn.NLLLoss()
     # 训练
+    ## 填充的pad，使得最终的长度相同
     padding_idx = 2
     step = 0
     model.train()
